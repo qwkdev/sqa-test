@@ -1737,7 +1737,7 @@
 			if (!skip) {
 				const d = new Date();
 				d.setTime(d.getTime() + (365*24*60*60*1000));
-				document.cookie = `cookie_consent=${accept ? 'accepted' : 'rejected'}; expires=${d.toUTCString()}; path=/; domain=.{{ domain }}; SameSite=Lax`;
+				document.cookie = `cookie_consent=${accept ? 'accepted' : 'rejected'}; expires=${d.toUTCString()}; path=/; domain=.sqa.my; SameSite=Lax`; // !!!
 			}
 
 			cookies.style.cssText = 'opacity: 0; pointer-events: none;';
@@ -1792,7 +1792,7 @@
 			return `${formatted}k+`;
 		}
 
-		// const subjects = [ {{ subjects }} ];
+		// const subjects = [ {{ subjects }} ]; !!!
 		const subjects = [];
 		
 		fetch('https://qwk.pythonanywhere.com/l/sqa', { method: 'GET' })
