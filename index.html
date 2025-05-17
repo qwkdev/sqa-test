@@ -1792,7 +1792,8 @@
 			return `${formatted}k+`;
 		}
 
-		const subjects = [ {{ subjects }} ];
+		// const subjects = [ {{ subjects }} ];
+		const subjects = [];
 		
 		fetch('https://qwk.pythonanywhere.com/l/sqa', { method: 'GET' })
 			.then(response => response.json())
